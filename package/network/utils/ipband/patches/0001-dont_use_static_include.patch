@@ -1,0 +1,15 @@
+---
+ Makefile |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- ipband-0.8.1.orig/Makefile	2008-06-17 13:23:19.000000000 -0400
++++ ipband-0.8.1/Makefile	2020-02-05 09:46:17.431677426 -0500
+@@ -9,7 +9,7 @@ V=0.8.1
+ 
+ MAKE=make
+ 
+-CPPFLAGS=-I/usr/include/pcap
++#CPPFLAGS=-I/usr/include/pcap
+ LIBS=-lpcap
+ CFLAGS := -Wall $(CFLAGS)
+ CC=gcc 

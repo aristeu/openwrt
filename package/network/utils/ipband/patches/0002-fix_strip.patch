@@ -1,0 +1,15 @@
+---
+ Makefile |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- ipband-0.8.1.orig/Makefile	2020-02-05 09:49:52.909839816 -0500
++++ ipband-0.8.1/Makefile	2020-02-05 09:54:40.228580004 -0500
+@@ -50,7 +50,7 @@ all: 	$(BIN)
+ 
+ $(BIN):	$(OBJ_C)
+ 	$(CC) -o $(BIN) $(OBJ_C) $(LIBS) $(CFLAGS)
+-	strip $(BIN)
++	$(STRIP) $(BIN)
+ 
+ install-strip:	install
+ 
